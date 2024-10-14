@@ -256,9 +256,6 @@ async def add_topic_handler(message: Message):
     
     try:
         await bot.set_chat_title(message.chat.id, new_chat_title)
-        config['CHAT_TITLE'] = new_chat_title
-        with open('config.json', 'w', encoding='utf-8') as file:
-            json.dump(config, file, indent=4, ensure_ascii=False)
     except Exception as e:
         await message.answer(f"⚠️: {e}")
 
