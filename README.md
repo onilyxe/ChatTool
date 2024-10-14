@@ -1,35 +1,42 @@
-# KickBot for Telegram
-Bot helps to get rid of no-names and individuals in chat
+# ЧатТул фор тг
+Блін я не пам'ятаю його функціонал
 
-[Try the my bot](https://t.me/sofiarolbot)
+[Мій бот](https://t.me/BudanovKVBot)
 
-Installation
+Встановлення
 ------------
 ```shell
-# Clone the repository
-$ git clone https://github.com/onilyxe/KickBot.git
+# Клонуй
+$ git clone https://github.com/onilyxe/chattool.git
 
-# Change the working directory to KickBot
-$ cd KickBot
+# Заходь
+$ cd chattool
 ```
 
-Configuring
+Конфігування
 ------------
-**Open the `config.json` configuration file in a text editor and change the values to your own:**
+**Відкрий `config.json` файл у текстовому редакторі та зміни значення на свої:**
 ```ini
 {
-    "TOKEN": "0000000000:0000000000000000000000000000000000"
+    "TOKEN": "0000000000:0000000000000000000000000000000000",
+    "ADMINS": [
+        000000000,
+        000000001
+    ],
+    "CHAT_TITLE": "міністерство канабісу"
 }
 ```
-* `TOKEN` is token for your Telegram bot. You can get it here: [BotFather](https://t.me/BotFather)
+* `TOKEN` це токен твого бота. Отримати його можна тут: [BotFather](https://t.me/BotFather)
+* `ADMINS` id адмінів для адмін команд: [BotFather](https://t.me/BotFather)
+* `CHAT_TITLE` назва чату для /topic: [BotFather](https://t.me/BotFather)
 
-Running
+Пихтіти працювати
 ------------
-Using Python
+Юзай пітон (не свій)
 ```shell
-# Install requirements
+# Встанови залежності
 $ python3 -m pip install -r requirements.txt
 
-# Run script
-$ python3 KickBot.py
+# Ран скріпт
+$ python3 chattool.py
 ```
